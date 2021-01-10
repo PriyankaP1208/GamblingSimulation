@@ -18,6 +18,7 @@ class GamblingSimulation
                 money=money+i;
                 totalWin=totalWin+(money/2);
                 money=money+(money/2);
+                console.log("Won","day",days,"By->",money);
             }
             else
             {
@@ -25,6 +26,7 @@ class GamblingSimulation
                 money=money-i;
                 totalLoss=totalLoss+(money/2);
                 money=money/2;
+                console.log("Lost","day",days,"By->",money);
             }
             days++;
         }
